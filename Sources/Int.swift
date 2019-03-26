@@ -162,14 +162,6 @@ public extension Int {
         return Dollar.it(self, isIn: Range(interval))
     }
 
-    /// Returns true if i is in half open interval
-    ///
-    /// - parameter interval: to check in
-    /// - returns: true if it is in interval otherwise false
-    public func isIn(interval: Range<Int>) -> Bool {
-        return Dollar.it(self, isIn: interval)
-    }
-
     private func mathForUnit(unit: Calendar.Component) -> CalendarMath {
         return CalendarMath(unit: unit, value: self)
     }
